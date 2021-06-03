@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import Movie from "./Movie";
 import Book from "./Book";
 import "./App.css";
 
@@ -9,19 +8,24 @@ class App extends React.Component {
   
   state = {
     isLoading: true,
-    movies: [],
     books: [],
-    query: "Na"
+    query: "미움받을 용기"
   };
 
-  handleChange(event) {
+
+  handleChange = (event) => {
     this.setState({query: event.target.value});
+  }
+
+  handleSubmit = (event) => {
+	this.getBooks();
+	event.preventDefault();
   }
 
   getBooks = async() =>{
     const { query } = this.state;
     const {data:{documents:books}} = await axios({
-      url: `https://dapi.kakao.com/v3/search/book?query=${query}`,
+      url: `https://dapi.kakao.com/v3/search/book?query=${query}`, //이거 나중에 parse로 보안해줘야하나
       method: 'get',
       headers: {Authorization: `KakaoAK dfa03086c4a2134d8fe234a777eaa281`}
     })
@@ -38,26 +42,11 @@ class App extends React.Component {
     };
 
 
-
-
-  getMovies = async () => {
-    const {
-      data: {
-        data: { movies }
-      }
-    } = await axios.get(
-      "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
-    );
-    this.setState({ movies, isLoading: false });
-
-    console.log(movies)
-  };
   componentDidMount() {
-    this.getMovies();
     this.getBooks();
   }
   render() {
-    const { isLoading, movies, books } = this.state;
+    const { isLoading, books, query } = this.state;
     return (
       <section className="container">
         {isLoading ? (
@@ -66,26 +55,13 @@ class App extends React.Component {
           </div>
         ) : (
           <div>
-            <div className="movies">
-              {/*movies.map(movie => (
-                <Movie
-                  key={movie.id}
-                  id={movie.id}
-                  year={movie.year}
-                  title={movie.title}
-                  summary={movie.summary}
-                  poster={movie.medium_cover_image}
-                  genres={movie.genres}
-                />
-              ))*/}
-            </div>
-            <form>
-              <label>
-                Name:
-                <input id="bookName" type="text" value={this.state.query} onChange={this.handleChange} />
-              </label>
-              <input type="submit" value="Submit" />
-            </form>
+			  <form className="search_bar" onSubmit={this.handleSubmit}>
+				<label>
+				  책이름:
+				  <input type="text" value={query} onChange={this.handleChange} />
+				</label>
+				<input type="submit" value="검색" />
+			  </form>
             <div className="books">
               {books.map(book => (
                 <Book

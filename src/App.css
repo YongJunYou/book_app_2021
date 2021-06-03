@@ -19,6 +19,10 @@ body,
   display: flex;
   justify-content: center;
 }
+.search_bar{
+  padding: 50px;
+  padding-top: 70px;
+}
 
 .loader {
   width: 100%;
@@ -29,7 +33,7 @@ body,
   font-weight: 300;
 }
 
-.movies {
+.books {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
