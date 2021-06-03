@@ -1,3 +1,3 @@
-# Movie App 2019
+# book App 2021
 
-React JS Fundamentals Course (2019 Update!)
+카카오api 연습용으로 만든 책검색 앱입니다.
