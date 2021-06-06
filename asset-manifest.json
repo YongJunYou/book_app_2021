@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/movie_app_2019/static/css/main.e083b577.chunk.css",
-    "main.js": "/movie_app_2019/static/js/main.081445d3.chunk.js",
-    "main.js.map": "/movie_app_2019/static/js/main.081445d3.chunk.js.map",
-    "runtime~main.js": "/movie_app_2019/static/js/runtime~main.64ac130e.js",
-    "runtime~main.js.map": "/movie_app_2019/static/js/runtime~main.64ac130e.js.map",
-    "static/js/2.a8ec8f9f.chunk.js": "/movie_app_2019/static/js/2.a8ec8f9f.chunk.js",
-    "static/js/2.a8ec8f9f.chunk.js.map": "/movie_app_2019/static/js/2.a8ec8f9f.chunk.js.map",
-    "index.html": "/movie_app_2019/index.html",
-    "precache-manifest.dda98e52a89068f3793aa38c8b2bd9d2.js": "/movie_app_2019/precache-manifest.dda98e52a89068f3793aa38c8b2bd9d2.js",
-    "service-worker.js": "/movie_app_2019/service-worker.js",
-    "static/css/main.e083b577.chunk.css.map": "/movie_app_2019/static/css/main.e083b577.chunk.css.map"
+    "main.css": "/book_app_2021/static/css/main.f17563c1.chunk.css",
+    "main.js": "/book_app_2021/static/js/main.12af0ba0.chunk.js",
+    "main.js.map": "/book_app_2021/static/js/main.12af0ba0.chunk.js.map",
+    "runtime~main.js": "/book_app_2021/static/js/runtime~main.a11cc778.js",
+    "runtime~main.js.map": "/book_app_2021/static/js/runtime~main.a11cc778.js.map",
+    "static/js/2.1cf06332.chunk.js": "/book_app_2021/static/js/2.1cf06332.chunk.js",
+    "static/js/2.1cf06332.chunk.js.map": "/book_app_2021/static/js/2.1cf06332.chunk.js.map",
+    "index.html": "/book_app_2021/index.html",
+    "precache-manifest.e055c99dc2c34cebde5cc01fcf0dc954.js": "/book_app_2021/precache-manifest.e055c99dc2c34cebde5cc01fcf0dc954.js",
+    "service-worker.js": "/book_app_2021/service-worker.js",
+    "static/css/main.f17563c1.chunk.css.map": "/book_app_2021/static/css/main.f17563c1.chunk.css.map"
   }
 }
