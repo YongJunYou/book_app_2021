@@ -1,5 +1,5 @@
 {
-  "name": "movie_app_2019",
+  "name": "book_app_2021",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,5 +31,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://nomadcoders.github.io/movie_app_2019/"
+  "homepage": "https://dbys34.github.io/book_app_2021/"
 }
